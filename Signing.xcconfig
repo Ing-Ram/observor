@@ -1,0 +1,12 @@
+// Signing configuration, shared.
+//
+// The Apple Developer Team ID is per-developer account information, not a
+// property of the project, so it does not belong in version control. It lives
+// in Local.xcconfig, which is untracked — copy Local.xcconfig.example to
+// Local.xcconfig and put your own team there.
+//
+// The include is optional (`#include?`, with the question mark). A clone that
+// has no Local.xcconfig still builds: DEVELOPMENT_TEAM stays empty and Xcode
+// falls back to ad-hoc "Sign to Run Locally", which is enough to run the app
+// locally. It is not enough to notarize or distribute — that needs a real team.
+#include? "Local.xcconfig"

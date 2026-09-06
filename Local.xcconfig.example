@@ -1,0 +1,8 @@
+// Copy this file to Local.xcconfig and fill in your own Team ID.
+//
+//     cp Local.xcconfig.example Local.xcconfig
+//
+// Local.xcconfig is gitignored, so what you put here stays on your machine.
+// Your Team ID is the 10-character string at
+// https://developer.apple.com/account → Membership details.
+DEVELOPMENT_TEAM = ABCDE12345

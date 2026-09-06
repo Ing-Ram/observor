@@ -78,6 +78,17 @@ as an outage, so a config mistake doesn't send you hunting a phantom failure.
    **Settings → Connection** and paste the Supabase URL and the **service_role**
    key (Project Settings → API). The key is stored in the login Keychain.
 
+   Code signing is optional for local use — with no `Local.xcconfig` the app
+   builds ad-hoc as "Sign to Run Locally", which is enough to run it. To sign
+   with your own Apple developer account, copy the template and fill in your
+   Team ID:
+
+   ```sh
+   cp Local.xcconfig.example Local.xcconfig
+   ```
+
+   `Local.xcconfig` is gitignored, so your Team ID stays on your machine.
+
    The anon key will not work for reading: the tables have no public select
    policy on purpose, so your traffic data is not world-readable.
 

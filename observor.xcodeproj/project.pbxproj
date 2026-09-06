@@ -8,6 +8,8 @@
 
 /* Begin PBXFileReference section */
 		0B5A00000000000000000001 /* observor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = observor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B5A00000000000000000010 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		0B5A00000000000000000011 /* Local.xcconfig.example */ = {isa = PBXFileReference; lastKnownFileType = text; path = Local.xcconfig.example; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +35,8 @@
 			isa = PBXGroup;
 			children = (
 				0B5A00000000000000000002 /* observor */,
+				0B5A00000000000000000010 /* Signing.xcconfig */,
+				0B5A00000000000000000011 /* Local.xcconfig.example */,
 				0B5A00000000000000000005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +131,7 @@
 /* Begin XCBuildConfiguration section */
 		0B5A0000000000000000000C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5A00000000000000000010 /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -173,6 +178,7 @@
 		};
 		0B5A0000000000000000000D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5A00000000000000000010 /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -219,7 +225,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -249,7 +254,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
